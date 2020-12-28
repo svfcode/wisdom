@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "## Slogans - Недели программирования экономят часы планирования - Видение всегда предшествует осуществлению - Если Я не могу что-то создать, значит Я этого не понимаю - Прошлое забыто, будущее закрыто, настоящее даровано - Done is better than perfect",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KlimovCode/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KlimovCode/portfolio/issues"
+  },
+  "homepage": "https://github.com/KlimovCode/portfolio#readme"
+}
