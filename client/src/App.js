@@ -1,13 +1,13 @@
 import './App.css'
 import Header from './common/Header'
 import Footer from './common/Footer'
-import Sliders from './components/Sliders'
+import Main from './components/Main'
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Sliders />
+      <Main />
       <Footer />
     </div>
   );

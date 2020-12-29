@@ -3,7 +3,7 @@ import Carousel from './Carousel'
 
 export default () => {
   return (
-    <main className="main mt-5">
+    <main className="mt-5">
 
 
       <div className="container">

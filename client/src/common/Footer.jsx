@@ -2,10 +2,10 @@ import React from 'react'
 
 export default () => {
   return (
-    <div className="pt-4 my-md-5 pt-md-5 border-top ">
+    <footer className="bg-dark p-3 mt-5">
 
       <a href="" className="text-muted">KlimovCode</a>
 
-    </div>
+    </footer>
   )
 }
