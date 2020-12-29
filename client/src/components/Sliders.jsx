@@ -2,7 +2,7 @@ import React from 'react'
 
 export default () => {
   return (
-    <main className="flex-shrink-0">
+    <main className="main">
 
 
       <div className="container">
