@@ -9,7 +9,6 @@ export default () => {
           <span className="text-light">Видение всегда предшествует осуществлению</span>
           <button type="button" className="btn btn-primary">Связаться</button>
         </div>
-
       </nav>
     </header>
   )
