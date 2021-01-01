@@ -3,25 +3,17 @@ import Slider from './Slider'
 
 export default (props) => {
   return (
+    <div className="card text-center m-2">
+      <div className="card-header"> {props.cardName} </div>
+      <div className="card-body">
+        <h5 className="card-title"> {props.cardTitle} </h5>
+        <p className="card-text"> {props.cardDescription} </p>
 
+        <Slider name={props.name} imgs={props.imgs} />
 
-
-
-    <div class="card text-center m-2">
-      <div class="card-header"> {props.cardName} </div>
-      <div class="card-body">
-        <h5 class="card-title"> {props.cardTitle} </h5>
-        <p class="card-text"> {props.cardDescription} </p>
-
-        <Slider name={props.name} />
-
-        <a href="#" class="btn btn-primary mt-3">Посмотреть полный список</a>
+        <a href="#" className="btn btn-primary mt-3">Посмотреть полный список</a>
       </div>
-      <div class="card-footer text-muted"> {props.cardQuot} </div>
+      <div className="card-footer text-muted"> {props.cardQuot} </div>
     </div>
-
-
-
-
   )
 }

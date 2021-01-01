@@ -1,8 +1,5 @@
-import studyImg1 from '../assets/js-samurai.png'
-import studyImg2 from '../assets/minin.png'
-import studyImg3 from '../assets/freecodecamp.png'
-
 export default (props) => {
+  const { img1, img2, img3 } = props.imgs
   return (
     <div>
       <div id={props.name} className="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -16,13 +13,13 @@ export default (props) => {
         <div className="carousel-inner">
 
           <div className="carousel-item active" data-bs-interval="2000">
-            <img src={studyImg1} className="d-block w-100" alt="..." />
+            <img src={img1} className="d-block w-100" alt="..." />
           </div> {/* end carousel-item div */}
           <div className="carousel-item" data-bs-interval="2000">
-            <img src={studyImg2} className="d-block w-100" alt="..." />
+            <img src={img2} className="d-block w-100" alt="..." />
           </div>
           <div className="carousel-item" data-bs-interval="2000">
-            <img src={studyImg3} className="d-block w-100" alt="..." />
+            <img src={img3} className="d-block w-100" alt="..." />
           </div>
         </div> {/* end carousel-inner div */}
 
