@@ -1,5 +1,6 @@
 import studyImg1 from '../assets/js-samurai.png'
-import studyImg2 from '../assets/js-samurai.png'
+import studyImg2 from '../assets/minin.png'
+import studyImg3 from '../assets/freecodecamp.png'
 
 export default () => {
   return (
@@ -16,24 +17,12 @@ export default () => {
 
           <div className="carousel-item active" data-bs-interval="10000">
             <img src={studyImg1} className="d-block w-100" alt="..." />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Samurai JS</h5>
-              <p>Курс белорусских авторов</p>
-            </div>
           </div> {/* end carousel-item div */}
           <div className="carousel-item" data-bs-interval="2000">
             <img src={studyImg2} className="d-block w-100" alt="..." />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
           </div>
           <div className="carousel-item">
-            <img src={studyImg1} className="d-block w-100" alt="..." />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </div>
+            <img src={studyImg3} className="d-block w-100" alt="..." />
           </div>
         </div> {/* end carousel-inner div */}
 
