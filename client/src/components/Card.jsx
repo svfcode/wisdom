@@ -1,31 +1,27 @@
 import React from 'react'
 import Slider from './Slider'
 
-export default () => {
+export default (props) => {
   return (
-    <main className="mt-5">
 
 
-      <div className="container text-center">
 
-        <div class="card text-center">
-          <div class="card-header">Обучение</div>
-          <div class="card-body">
-            <h5 class="card-title">База знаний</h5>
-            <p class="card-text">
-              Перечисленны информационные материалы на которых основана моя компетенция.
-              </p>
 
-            <Slider />
+    <div class="card text-center m-2">
+      <div class="card-header"> {props.cardName} </div>
+      <div class="card-body">
+        <h5 class="card-title"> {props.cardTitle} </h5>
+        <p class="card-text"> {props.cardDescription} </p>
 
-            <a href="#" class="btn btn-primary mt-3">Посмотреть полный список</a>
-          </div>
-          <div class="card-footer text-muted">Чтобы много иметь надо много знать, для этого нужно много учиться.</div>
-        </div>
+        <Slider name={props.name} />
 
+        <a href="#" class="btn btn-primary mt-3">Посмотреть полный список</a>
       </div>
+      <div class="card-footer text-muted"> {props.cardQuot} </div>
+    </div>
 
 
-    </main>
+
+
   )
 }
