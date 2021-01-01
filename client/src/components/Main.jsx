@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from './Card'
-import { getStudyImg } from '../assets/exportAssets'
+import { getStudyImg, getSkillsImg } from '../assets/exportAssets'
 
 export default () => {
   return (
@@ -27,7 +27,7 @@ export default () => {
           cardQuot="Каждой работе - свой инструмент."
           cardTitle="Технологии которыми владею"
           cardDescription="Перечислен технологический стек."
-          imgs={getStudyImg()} />
+          imgs={getSkillsImg()} />
       </div>
     </main>
   )
