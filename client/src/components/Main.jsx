@@ -1,6 +1,9 @@
 import React from 'react'
 import Card from './Card'
-import { getStudyImg, getSkillsImg, getExperienceImg } from '../assets/exportAssets'
+import {
+  getStudyImg, getSkillsImg, getExperienceImg,
+  getStudyTxt
+} from '../assets/exportAssets'
 
 export default () => {
   return (
@@ -12,7 +15,8 @@ export default () => {
           cardQuot="Чтобы много иметь надо много знать, для этого нужно много учиться."
           cardTitle="База знаний"
           cardDescription="Перечисленны информационные материалы на которых основана моя компетенция."
-          imgs={getStudyImg()} />
+          imgs={getStudyImg()}
+          list={getStudyTxt()} />
 
         <Card name="experience"
           cardName="Опыт"
@@ -20,14 +24,16 @@ export default () => {
           Берет, правда, дорого, но объясняет доходчиво."
           cardTitle="Выполненые работы"
           cardDescription="Результаты труда - показатель состоятельности специалиста."
-          imgs={getExperienceImg()} />
+          imgs={getExperienceImg()}
+          list={getStudyTxt()} />
 
         <Card name="skills"
           cardName="Тенологии"
           cardQuot="Каждой работе - свой инструмент."
           cardTitle="Технологии которыми владею"
           cardDescription="Перечислен технологический стек."
-          imgs={getSkillsImg()} />
+          imgs={getSkillsImg()}
+          list={getStudyTxt()} />
       </div>
     </main>
   )

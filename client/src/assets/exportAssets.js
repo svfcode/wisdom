@@ -30,3 +30,62 @@ export const getExperienceImg = () => {
     img3: experienceImg3
   }
 }
+
+export const getStudyTxt = () => {
+  return [
+    {
+      name: 'It-samurai',
+      description: 'Youtube канал Белорусского автора Дмитрия',
+      link: 'https://www.youtube.com/channel/UCTW0FUhT0m-Bqg2trTbSs0g'
+    },
+    {
+      name: 'Владилен Минин',
+      description: 'Youtube канал Владилена Минина',
+      link: 'https://www.youtube.com/channel/UCg8ss4xW9jASrqWGP30jXiw'
+    },
+    {
+      name: 'FreeCodeCamp',
+      description: 'Курсы по программированию от американских авторов',
+      link: 'https://www.freecodecamp.org/'
+    }
+  ]
+}
+
+export const getSkillsTxt = () => {
+  return [
+    {
+      name: 'It-samurai',
+      description: 'Youtube канал Белорусского автора Дмитрия',
+      link: 'https://www.youtube.com/channel/UCTW0FUhT0m-Bqg2trTbSs0g'
+    },
+    {
+      name: 'Владилен Минин',
+      description: 'Youtube канал Владилена Минина',
+      link: 'https://www.youtube.com/channel/UCg8ss4xW9jASrqWGP30jXiw'
+    },
+    {
+      name: 'FreeCodeCamp',
+      description: 'Курсы по программированию от американских авторов',
+      link: 'https://www.freecodecamp.org/'
+    }
+  ]
+}
+export const getExperienceTxt = () => {
+  return [
+    {
+      name: 'It-samurai',
+      description: 'Youtube канал Белорусского автора Дмитрия',
+      link: 'https://www.youtube.com/channel/UCTW0FUhT0m-Bqg2trTbSs0g'
+    },
+    {
+      name: 'Владилен Минин',
+      description: 'Youtube канал Владилена Минина',
+      link: 'https://www.youtube.com/channel/UCg8ss4xW9jASrqWGP30jXiw'
+    },
+    {
+      name: 'FreeCodeCamp',
+      description: 'Курсы по программированию от американских авторов',
+      link: 'https://www.freecodecamp.org/'
+    }
+  ]
+}

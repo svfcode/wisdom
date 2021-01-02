@@ -2,6 +2,16 @@ import React from 'react'
 import Slider from './Slider'
 
 export default (props) => {
+  const getList = () => {
+    return props.list.map((i, key) => {
+      return (
+        <li key={key}>
+          {i.name}
+        </li>
+      )
+    })
+  }
+
   return (
     <>
       <div id={props.name} className="modal fade">
@@ -13,6 +23,9 @@ export default (props) => {
             </div>
             <div className="modal-body">
               <p>{props.cardDescription}</p>
+              <ul>
+                {getList()}
+              </ul>
             </div>
             <div className="modal-footer">
               <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Свернуть</button>
