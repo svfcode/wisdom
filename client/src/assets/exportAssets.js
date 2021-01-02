@@ -4,6 +4,9 @@ import studyImg3 from './freecodecamp.png'
 import skillsImg1 from './htmlcssjs.png'
 import skillsImg2 from './react.png'
 import skillsImg3 from './node.png'
+import experienceImg1 from './blog.png'
+import experienceImg2 from './shorter.png'
+import experienceImg3 from './js-interview.png'
 
 export const getStudyImg = () => {
   return {
@@ -18,5 +21,12 @@ export const getSkillsImg = () => {
     img1: skillsImg1,
     img2: skillsImg2,
     img3: skillsImg3
+  }
+}
+export const getExperienceImg = () => {
+  return {
+    img1: experienceImg1,
+    img2: experienceImg2,
+    img3: experienceImg3
   }
 }
