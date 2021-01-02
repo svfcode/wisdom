@@ -2,7 +2,7 @@ import React from 'react'
 import Card from './Card'
 import {
   getStudyImg, getSkillsImg, getExperienceImg,
-  getStudyTxt
+  getStudyTxt, getSkillsTxt, getExperienceTxt
 } from '../assets/exportAssets'
 
 export default () => {
@@ -25,7 +25,7 @@ export default () => {
           cardTitle="Выполненые работы"
           cardDescription="Результаты труда - показатель состоятельности специалиста."
           imgs={getExperienceImg()}
-          list={getStudyTxt()} />
+          list={getExperienceTxt()} />
 
         <Card name="skills"
           cardName="Тенологии"
@@ -33,7 +33,7 @@ export default () => {
           cardTitle="Технологии которыми владею"
           cardDescription="Перечислен технологический стек."
           imgs={getSkillsImg()}
-          list={getStudyTxt()} />
+          list={getSkillsTxt()} />
       </div>
     </main>
   )

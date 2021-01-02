@@ -54,38 +54,38 @@ export const getStudyTxt = () => {
 export const getSkillsTxt = () => {
   return [
     {
-      name: 'It-samurai',
-      description: 'Youtube канал Белорусского автора Дмитрия',
-      link: 'https://www.youtube.com/channel/UCTW0FUhT0m-Bqg2trTbSs0g'
+      name: 'HTML CSS Javascript',
+      description: 'Основа для современного веба',
+      link: 'https://developer.mozilla.org/ru/docs/Web'
     },
     {
-      name: 'Владилен Минин',
-      description: 'Youtube канал Владилена Минина',
-      link: 'https://www.youtube.com/channel/UCg8ss4xW9jASrqWGP30jXiw'
+      name: 'React JS',
+      description: 'Библиотека для создания пользовательских интерфейсов',
+      link: 'https://ru.reactjs.org/'
     },
     {
-      name: 'FreeCodeCamp',
-      description: 'Курсы по программированию от американских авторов',
-      link: 'https://www.freecodecamp.org/'
+      name: 'Node JS',
+      description: 'Среда выполнения для JavaScript, которая работает на серверах',
+      link: 'https://nodejs.org/dist/latest-v14.x/docs/api/'
     }
   ]
 }
 export const getExperienceTxt = () => {
   return [
     {
-      name: 'It-samurai',
-      description: 'Youtube канал Белорусского автора Дмитрия',
-      link: 'https://www.youtube.com/channel/UCTW0FUhT0m-Bqg2trTbSs0g'
+      name: 'Блог эндокринолога',
+      description: 'Блог с возможностью записи на прием, информации о враче и возможностью размещать посты',
+      link: 'http://194.67.108.218:5000/'
     },
     {
-      name: 'Владилен Минин',
-      description: 'Youtube канал Владилена Минина',
-      link: 'https://www.youtube.com/channel/UCg8ss4xW9jASrqWGP30jXiw'
+      name: 'URL Shorter',
+      description: 'Сервис для сокращения ссылок, использует jwt для авторизации',
+      link: 'http://194.67.108.218:5001/'
     },
     {
-      name: 'FreeCodeCamp',
-      description: 'Курсы по программированию от американских авторов',
-      link: 'https://www.freecodecamp.org/'
+      name: 'JS-Interview',
+      description: 'Авторский сайт для сбора информации по технологии JS в концентрированном виде',
+      link: 'http://194.67.108.218:5002/'
     }
   ]
 }
