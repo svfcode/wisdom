@@ -5,9 +5,12 @@ export default (props) => {
   const getList = () => {
     return props.list.map((i, key) => {
       return (
-        <li key={key}>
-          {i.name}
-        </li>
+        <a key={key} href={i.link} className="list-group-item list-group-item-action" aria-current="true" rel="noopener" target="_blank">
+          <div className="d-flex w-100 justify-content-between">
+            <h5 className="mb-1">{i.name}</h5>
+          </div>
+          <p className="mb-1">{i.description}</p>
+        </a>
       )
     })
   }
@@ -23,9 +26,9 @@ export default (props) => {
             </div>
             <div className="modal-body">
               <p>{props.cardDescription}</p>
-              <ul>
+              <div className="list-group">
                 {getList()}
-              </ul>
+              </div>
             </div>
             <div className="modal-footer">
               <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Свернуть</button>
