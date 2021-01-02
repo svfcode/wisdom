@@ -5,7 +5,8 @@ export default (props) => {
   const getList = () => {
     return props.list.map((i, key) => {
       return (
-        <a key={key} href={i.link} className="list-group-item list-group-item-action" aria-current="true" rel="noopener" target="_blank">
+        <a key={key} href={i.link} className="list-group-item list-group-item-action"
+          aria-current="true" rel="noopener" target="_blank">
           <div className="d-flex w-100 justify-content-between">
             <h5 className="mb-1">{i.name}</h5>
           </div>
@@ -17,7 +18,7 @@ export default (props) => {
 
   return (
     <>
-      <div id={props.name} className="modal fade">
+      <div id={props.name + '-modal'} className="modal fade">
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
@@ -45,7 +46,7 @@ export default (props) => {
 
           <Slider name={props.name} imgs={props.imgs} />
 
-          <a href="#" className="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target={'#' + props.name}>
+          <a href="#" className="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target={'#' + props.name + '-modal'}>
             Посмотреть полный список
           </a>
         </div>

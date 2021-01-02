@@ -5,7 +5,7 @@ export default (props) => {
       <div id={props.name} className="carousel carousel-dark slide" data-bs-ride="carousel">
 
         <ol className="carousel-indicators">
-          <li data-bs-target={'#' + props.name} data-bs-slide-to="0" className="active"></li>
+          <li data-bs-target={'#' + props.name} data-bs-slide-to="0"></li>
           <li data-bs-target={'#' + props.name} data-bs-slide-to="1"></li>
           <li data-bs-target={'#' + props.name} data-bs-slide-to="2"></li>
         </ol>
