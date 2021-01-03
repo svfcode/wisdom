@@ -1,0 +1,17 @@
+const path = require('path')
+const express = require('express')
+const app = express()
+const bodyParser = require('body-parser')
+const MongoClient = require('mongodb').MongoClient
+
+app.get('/', (req, res) => {
+  res.send('Hello World')
+})
+
+MongoClient.connect('mongodb://localhost:27017', { useUnifiedTopology: true }, (err, client) => {
+  if (err) console.log(err)
+  db = client.db('portfolio')
+  app.listen(7000, () => {
+    console.log('Server has started on 7000 port')
+  })
+})

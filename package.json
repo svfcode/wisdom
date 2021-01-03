@@ -4,7 +4,9 @@
   "description": "## Slogans - Недели программирования экономят часы планирования - Видение всегда предшествует осуществлению - Если Я не могу что-то создать, значит Я этого не понимаю - Прошлое забыто, будущее закрыто, настоящее даровано - Done is better than perfect",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "node app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/KlimovCode/portfolio/issues"
   },
-  "homepage": "https://github.com/KlimovCode/portfolio#readme"
+  "homepage": "https://github.com/KlimovCode/portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.3"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
 }

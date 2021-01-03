@@ -1,6 +1,10 @@
 import React from 'react'
 
 export default () => {
+  const sendMsg = (event) => {
+    console.log(event)
+  }
+
   return (
     <section className="container mt-5">
       <div className="card w-100">
@@ -52,7 +56,7 @@ export default () => {
                 </div>
                 <div className="row">
                   <div className="col-12">
-                    <button type="button" className="btn btn-success mt-1 w-100">Отправить</button>
+                    <button type="button" className="btn btn-success mt-1 w-100" onClick={sendMsg}>Отправить</button>
                   </div>
 
                 </div>

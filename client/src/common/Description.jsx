@@ -9,7 +9,7 @@ export default () => {
           <p>
             Буду рад спроектировать и реализовать для вас лендинг, блог, магазин. На данный момент цены более чем демократичные.
           </p>
-          <table class="table table-hover">
+          <table className="table table-hover">
             <thead>
               <tr>
                 <th scope="col">Вид работы</th>
