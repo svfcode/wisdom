@@ -5,7 +5,8 @@ const bodyParser = require('body-parser')
 const MongoClient = require('mongodb').MongoClient
 
 app.get('/', (req, res) => {
-  res.send('Hello World')
+  console.log(req)
+  res.status(201).json({ text: 'Hello World' })
 })
 
 MongoClient.connect('mongodb://localhost:27017', { useUnifiedTopology: true }, (err, client) => {

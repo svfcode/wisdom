@@ -1,8 +1,10 @@
 import React from 'react'
+const axios = require('axios')
 
 export default () => {
   const sendMsg = (event) => {
-    console.log(event)
+    axios.get("https://localhost:3000")
+      .then(response => console.log("response", response.data))
   }
 
   return (

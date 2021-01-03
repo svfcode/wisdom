@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
+    "axios": "^0.21.1",
     "bootstrap": "^5.0.0-beta1",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
@@ -26,7 +27,7 @@
       "react-app/jest"
     ]
   },
-  "proxy": "http://localhost:7000",
+  "proxy": "http://192.168.0.104:7000/",
   "browserslist": {
     "production": [
       ">0.2%",
