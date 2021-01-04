@@ -22,7 +22,7 @@ export default () => {
   }
 
   return (
-    <section className="container mt-5">
+    <section className="container mt-5" id="contacts">
       <div className="card w-100">
         <div className="card-body">
           <div className="row">
