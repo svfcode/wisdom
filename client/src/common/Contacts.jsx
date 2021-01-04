@@ -3,8 +3,19 @@ const axios = require('axios')
 
 export default () => {
   const sendMsg = (event) => {
-    axios.get('http://192.168.0.104:5003/api')
-      .then(response => console.log("response", response.data))
+    let customersData = {
+      name: '',
+      email: '',
+      msg: '',
+      date: new Date().getDate()
+    }
+    axios.post('http://192.168.0.104:5003/api', customersData)
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   }
 
   return (

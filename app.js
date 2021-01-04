@@ -1,11 +1,14 @@
 const path = require('path')
 const express = require('express')
 const app = express()
+const cors = require('cors')
 const bodyParser = require('body-parser')
 const MongoClient = require('mongodb').MongoClient
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
+app.use(cors())
+app.options('*', cors())
 
 if (process.env.NODE_ENV === 'production') {
   app.use('/', express.static(path.join(__dirname, 'client', 'build')))
@@ -18,6 +21,10 @@ if (process.env.NODE_ENV === 'development') {
   console.log('it is dev mode')
   app.get('/api', (req, res) => {
     console.log('hello api')
+  })
+  app.post('/api', (req, res) => {
+    console.log(req.body)
+    res.send('all ok')
   })
 
   app.use('/', express.static(path.join(__dirname, 'client', 'public')))
