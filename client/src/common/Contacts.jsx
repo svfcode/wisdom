@@ -12,7 +12,7 @@ export default () => {
       msg: document.getElementById('floatingTextarea').value,
       date: new Date().getTime()
     }
-    axios.post('http://192.168.0.104:5003/api', customersData)
+    axios.post('http://194.67.108.218:5003/api', customersData)
       .then(function (response) {
         console.log(response.data);
       })
