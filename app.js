@@ -10,6 +10,8 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(cors())
 app.options('*', cors())
 
+var db
+
 if (process.env.NODE_ENV === 'production') {
   app.use('/', express.static(path.join(__dirname, 'client', 'build')))
   app.get('*', (req, res) => {
@@ -18,18 +20,20 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 if (process.env.NODE_ENV === 'development') {
-  console.log('it is dev mode')
-  app.get('/api', (req, res) => {
-    console.log('hello api')
-  })
   app.post('/api', (req, res) => {
-    console.log(req.body)
-    res.status(201).json({ msg: 'All OK!' })
-  })
+    customer = req.body
+    db.collection('msgs').insertOne(customer, (err, result) => {
+      if (err) {
+        console.log(err)
+        return res.sendStatus(500)
+      }
+      res.status(201).json({ msg: 'All OK!' })
+    })
 
-  app.use('/', express.static(path.join(__dirname, 'client', 'public')))
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'client', 'public', 'index.html'))
+    app.use('/', express.static(path.join(__dirname, 'client', 'public')))
+    app.get('*', (req, res) => {
+      res.sendFile(path.resolve(__dirname, 'client', 'public', 'index.html'))
+    })
   })
 }
 
