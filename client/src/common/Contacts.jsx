@@ -3,7 +3,7 @@ const axios = require('axios')
 
 export default () => {
   const sendMsg = (event) => {
-    axios.get('http://192.168.0.104:3000')
+    axios.get('http://192.168.0.104:5003/api')
       .then(response => console.log("response", response.data))
   }
 
