@@ -24,7 +24,7 @@ if (process.env.NODE_ENV === 'development') {
   })
   app.post('/api', (req, res) => {
     console.log(req.body)
-    res.send('all ok')
+    res.status(201).json({ msg: 'All OK!' })
   })
 
   app.use('/', express.static(path.join(__dirname, 'client', 'public')))

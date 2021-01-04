@@ -4,14 +4,14 @@ const axios = require('axios')
 export default () => {
   const sendMsg = (event) => {
     let customersData = {
-      name: '',
-      email: '',
-      msg: '',
+      name: document.getElementById('floatingInput').value,
+      email: document.getElementById('floatingEmail').value,
+      msg: document.getElementById('floatingTextarea').value,
       date: new Date().getTime()
     }
     axios.post('http://192.168.0.104:5003/api', customersData)
       .then(function (response) {
-        console.log(response);
+        console.log(response.data.msg);
       })
       .catch(function (error) {
         console.log(error);
@@ -56,8 +56,8 @@ export default () => {
                   </div>
                   <div className="col-lg-6">
                     <div className="form-floating mt-1">
-                      <input type="email" className="form-control" id="floatingPassword" placeholder="name@example.com" />
-                      <label htmlFor="floatingPassword" className="mx-3">Ваша почта</label>
+                      <input type="email" className="form-control" id="floatingEmail" placeholder="name@example.com" />
+                      <label htmlFor="floatingEmail" className="mx-3">Ваша почта</label>
                     </div>
                   </div>
                 </div>
