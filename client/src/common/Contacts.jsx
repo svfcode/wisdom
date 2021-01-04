@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 const axios = require('axios')
 
 export default () => {
+  const [flag, setFlag] = useState(true)
+
   const sendMsg = (event) => {
+    setFlag(!flag)
     let customersData = {
       name: document.getElementById('floatingInput').value,
       email: document.getElementById('floatingEmail').value,
@@ -44,35 +47,37 @@ export default () => {
             </div>
             <div className="col-lg-8">
               <div className="container h-100">
-                <div className="row">
-                  <h4>Напишите мне сообщение</h4>
-                </div>
-                <div className="row">
-                  <div className="col-lg-6">
-                    <div className="form-floating mt-1">
-                      <input type="text" className="form-control" id="floatingInput" placeholder="Иванов Иван" />
-                      <label htmlFor="floatingInput" className="mx-3">Ваше имя</label>
+                {flag ? (
+                  <>
+                    <div className="row">
+                      <h4>Напишите мне сообщение</h4>
                     </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="form-floating mt-1">
-                      <input type="email" className="form-control" id="floatingEmail" placeholder="name@example.com" />
-                      <label htmlFor="floatingEmail" className="mx-3">Ваша почта</label>
+                    <div className="row">
+                      <div className="col-lg-6">
+                        <div className="form-floating mt-1">
+                          <input type="text" className="form-control" id="floatingInput" placeholder="Иванов Иван" />
+                          <label htmlFor="floatingInput" className="mx-3">Ваше имя</label>
+                        </div>
+                      </div>
+                      <div className="col-lg-6">
+                        <div className="form-floating mt-1">
+                          <input type="email" className="form-control" id="floatingEmail" placeholder="name@example.com" />
+                          <label htmlFor="floatingEmail" className="mx-3">Ваша почта</label>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="form-floating mt-1 h-100">
-                    <textarea className="form-control h-100" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                    <label htmlFor="floatingTextarea" className="mx-3">Ваше сообщение</label>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-12">
-                    <button type="button" className="btn btn-success mt-1 w-100" onClick={sendMsg}>Отправить</button>
-                  </div>
-
-                </div>
+                    <div className="row">
+                      <div className="form-floating mt-1 h-100">
+                        <textarea className="form-control h-100" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                        <label htmlFor="floatingTextarea" className="mx-3">Ваше сообщение</label>
+                      </div>
+                    </div>
+                    <div className="row">
+                      <div className="col-12">
+                        <button type="button" className="btn btn-success mt-1 w-100" onClick={sendMsg}>Отправить</button>
+                      </div>
+                    </div>
+                  </>) : <h3>Ваше сообщение отправленно</h3>}
               </div>
             </div>
           </div>
