@@ -20,20 +20,22 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 if (process.env.NODE_ENV === 'development') {
-  app.post('/api', (req, res) => {
+  app.post('/api', async (req, res) => {
     customer = req.body
-    db.collection('msgs').insertOne(customer, (err, result) => {
+    await db.collection('msgs').insertOne(customer, (err, result) => {
       if (err) {
         console.log(err)
         return res.sendStatus(500)
       }
-      res.status(201).json({ msg: 'All OK!' })
+      // console.log(result)
     })
+    let msgs = await db.collection('msgs').find().toArray()
+    res.status(201).json({ msg: 'All OK!', msgs })
+  })
 
-    app.use('/', express.static(path.join(__dirname, 'client', 'public')))
-    app.get('*', (req, res) => {
-      res.sendFile(path.resolve(__dirname, 'client', 'public', 'index.html'))
-    })
+  app.use('/', express.static(path.join(__dirname, 'client', 'public')))
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'public', 'index.html'))
   })
 }
 

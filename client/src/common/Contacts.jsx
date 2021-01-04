@@ -11,7 +11,7 @@ export default () => {
     }
     axios.post('http://192.168.0.104:5003/api', customersData)
       .then(function (response) {
-        console.log(response.data.msg);
+        console.log(response.data);
       })
       .catch(function (error) {
         console.log(error);
