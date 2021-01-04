@@ -7,7 +7,7 @@ export default () => {
       name: '',
       email: '',
       msg: '',
-      date: new Date().getDate()
+      date: new Date().getTime()
     }
     axios.post('http://192.168.0.104:5003/api', customersData)
       .then(function (response) {
