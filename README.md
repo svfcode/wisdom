@@ -1,5 +1,15 @@
 # Portfolio KlimovCode
 
+## Home
+- pinball game
+- switch slogans
+- work timeline
+- contacts
+
+## Blog
+- categories
+- comments
+
 ## Slogans
 - Недели программирования экономят часы планирования
 - Видение всегда предшествует осуществлению
