@@ -52,3 +52,4 @@
 - Имеющий желания - ищет возможности
 - Кто ищет, вынужден блуждать
 - No money no honey
+- What did the ocean say to the beach - Nothing, it just a waved
