@@ -10,3 +10,5 @@
 Мозг не учится там, где всё понятно 
 
 Жизнь лучший учитель, берёт правда дорого, но объясняет доходчиво
+
+Find a job you enjoy doing, and you will never have to work a day in your life
