@@ -16,3 +16,5 @@ Find a job you enjoy doing, and you will never have to work a day in your life
 Вспомнил солнце, вот и лучик
 
 Живая рыба плывет против течения, а дохлая по течению
+
+Процесс важнее результата
