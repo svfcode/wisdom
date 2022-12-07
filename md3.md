@@ -18,3 +18,5 @@ Find a job you enjoy doing, and you will never have to work a day in your life
 Живая рыба плывет против течения, а дохлая по течению
 
 Процесс важнее результата
+
+Не комментируйте плохой код - перепишите его
