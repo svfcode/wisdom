@@ -34,3 +34,5 @@ Find a job you enjoy doing, and you will never have to work a day in your life
 Что в прошлом, то не проходит. 
 
 Two is One and One is None.
+
+Посеявший ветер пожнёт бурю.
