@@ -36,3 +36,5 @@ Find a job you enjoy doing, and you will never have to work a day in your life
 Two is One and One is None.
 
 Посеявший ветер пожнёт бурю.
+
+Разработчики делятся на тех кто делает бекапы и тех кто еще не делает.
