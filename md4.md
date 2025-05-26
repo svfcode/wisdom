@@ -12,3 +12,5 @@
 Повторюсь, вы заходили в интернет?
 
 The secret of success is to do the common thing uncommonly well.
+
+Лучше один день потерять, чтобы потом за пять минут долететь.
